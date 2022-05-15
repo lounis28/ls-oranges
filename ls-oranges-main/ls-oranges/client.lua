@@ -9,7 +9,7 @@ local SellPed = {
     Config.SellPed
 }
 
----------------- Evento para tirar carros ------------------
+
 
 RegisterNetEvent('ls-oranges:client:RetirarVeiculo', function()
     local vehicle = Config.CarName
@@ -74,8 +74,7 @@ Citizen.CreateThread(function()
     })
 end)
 
-----------------------------------------------------
---------- Evento para apanhar laranjas -------------
+
 
 RegisterNetEvent('ls-oranges:client:ApanharLaranjas', function(data)
     local ped = PlayerPedId()
@@ -98,7 +97,7 @@ RegisterNetEvent('ls-oranges:client:ApanharLaranjas', function(data)
 end)
 
 ------------------------------
----- Blip no mapa ------------
+---- Blip ------------
 
 Citizen.CreateThread(function()
     local car = Config.CarPedLoc
@@ -112,8 +111,6 @@ Citizen.CreateThread(function()
     EndTextCommandSetBlipName(car)
 end)
 
---------------------------------
----------- Ped de processo -----
 
 Citizen.CreateThread(function()
     for _,v in pairs(ProcessPed) do

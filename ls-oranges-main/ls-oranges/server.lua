@@ -1,7 +1,5 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
---------- Apanhar laranjas -------------------
-
 RegisterNetEvent('ls-oranges:server:ApanharLaranjas', function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
@@ -11,8 +9,6 @@ RegisterNetEvent('ls-oranges:server:ApanharLaranjas', function()
     Player.Functions.AddItem(item, quantity)
 end)
 
----------------------------------------
---------- Processar Laranjas ----------
 
 RegisterNetEvent('ls-oranges:server:ProcessarLaranjas', function()
     local src = source
@@ -33,8 +29,6 @@ RegisterNetEvent('ls-oranges:server:ProcessarLaranjas', function()
     end
 end)
 
---------------------------------------
-------- Vender Sumo de laranja -------
 
 local ItemList = {
     [Config.OrangeJuiceSpawnName] =  Config.JuiceSellPrice,
