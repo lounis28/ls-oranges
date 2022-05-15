@@ -13,3 +13,5 @@ Go to resources qb-inventory/html/images and add orange.png & orange_juice.png t
 # Dependicies
 - qb-target - https://github.com/qbcore-framework/qb-target
 - qb-core - https://github.com/qbcore-framework/qb-core
+# Preview
+https://www.youtube.com/watch?v=IWKyYUnja3Q
